@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thiago Bueno Designer Católico</title>
+<meta name="description" content="Thiago Bueno, designer católico: identidade visual, artes, sites e vídeos para paróquias, comunidades e colégios católicos.">
+<link rel="icon" href="logo-s.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Instrument+Serif:ital@1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE vitrine pessoal, noturna e premium, com reverência
+   IDEA o ateliê à noite: a tela do Photoshop acesa, seleção tracejada em ciano, luz azul atrás do designer
+   PICTURE a foto do Thiago em luz azul, com cartões de vidro flutuando e a cúpula da logo em halo
+   COLOUR noite azul #050c22, azul elétrico #2f6bff, ciano de seleção #4fd4ff, toque dourado só na logo; seções claras #eef3fb
+   TYPE Outfit (como a logo) + Instrument Serif itálico para a palavra de ênfase + Manrope no texto
+   LAYOUT laptop: texto à esquerda, foto grande à direita; celular: título, foto, botões e barra fixa */
+:root{color-scheme:dark;
+--night:#050c22;--deep:#0a1838;--card:rgba(20,40,90,.38);--glass:rgba(255,255,255,.06);--edge:rgba(140,180,255,.18);
+--blue:#2f6bff;--blue2:#1d4fd8;--cyan:#4fd4ff;--ink:#eaf1ff;--mute:#9fb0d6;
+--paper:#eef3fb;--paperInk:#0b1a3d;--paperMute:#4b5b80}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--night);color:var(--ink);font:16px/1.6 Manrope,system-ui,sans-serif;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Outfit,system-ui,sans-serif;font-weight:700;line-height:1.05;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h2{font-size:clamp(34px,4.6vw,54px)}
+h3{font-size:22px;font-weight:600;letter-spacing:-.01em}
+em{font-family:"Instrument Serif",Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0}
+.hl{color:var(--cyan)}
+p{margin:0 0 1em}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding-block:clamp(56px,7vw,112px);padding-inline:max(5vw,16px)}
+.lead{font-size:17px;color:var(--mute);max-width:58ch}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 8px;border-radius:999px;border:1px solid var(--edge);background:var(--glass);font-size:14px;color:#cfe0ff}
+.pill i{width:8px;height:8px;border-radius:50%;background:#3ee08f;box-shadow:0 0 0 4px rgba(62,224,143,.18)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:600 16px Outfit,sans-serif;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn svg{width:18px;height:18px}
+.btn.pri{background:var(--blue);color:#fff;box-shadow:0 10px 30px -10px rgba(47,107,255,.8)}
+.btn.pri:hover{background:#4a7fff;transform:translateY(-2px)}
+.btn.sec{background:var(--glass);border-color:var(--edge);color:#fff}
+.btn.sec:hover{background:rgba(255,255,255,.12)}
+.btn.be{background:#fff;color:#0b1a3d}
+.btn.be:hover{background:#dfe8ff;transform:translateY(-2px)}
+.btn.be svg{width:22px;height:22px;color:#1769ff}
+.btn.sm{min-height:44px;padding:0 18px;font-size:15px}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+
+/* nav */
+.top{position:fixed;top:14px;left:0;right:0;z-index:30;padding:0 max(4vw,12px)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 8px 8px 20px;border-radius:999px;background:rgba(8,18,46,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--edge)}
+.top .logo img{height:30px;width:auto}
+.menu{display:flex;gap:2px}
+.menu a{text-decoration:none;padding:10px 14px;border-radius:999px;font:500 15px Outfit,sans-serif;color:#c9d7f5}
+.menu a:hover{background:rgba(255,255,255,.07);color:#fff}
+
+/* hero */
+.hero{position:relative;padding-top:120px;padding-bottom:0;background:radial-gradient(60% 70% at 78% 40%,rgba(47,107,255,.35),transparent 70%),radial-gradient(40% 50% at 10% 90%,rgba(79,212,255,.10),transparent 70%),var(--night);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(140,180,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(140,180,255,.06) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(70% 70% at 50% 40%,#000,transparent);-webkit-mask-image:radial-gradient(70% 70% at 50% 40%,#000,transparent);pointer-events:none}
+.hero .wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:end}
+.htxt{padding-bottom:clamp(48px,7vw,110px)}
+.hero h1{font-size:clamp(44px,6vw,78px);margin:22px 0 22px}
+.hero .lead{font-size:18px;color:#bfd0f3}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}
+.chips span{font-size:14px;color:#cfe0ff;padding:7px 14px;border-radius:999px;border:1px solid var(--edge)}
+.photo{position:relative;align-self:end}
+.photo .frame{position:relative;border-radius:36px 36px 0 0;overflow:hidden;aspect-ratio:4/5;max-height:720px;margin-left:auto;-webkit-mask-image:linear-gradient(#000 78%,transparent);mask-image:linear-gradient(#000 78%,transparent)}
+.photo .frame img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.halo{position:absolute;left:50%;top:-4%;width:118%;aspect-ratio:1;transform:translateX(-50%);border-radius:50%;border:1px solid rgba(79,212,255,.25);box-shadow:0 0 80px rgba(47,107,255,.25) inset;pointer-events:none}
+.halo::after{content:"";position:absolute;inset:7%;border-radius:50%;border:1px dashed rgba(79,212,255,.22)}
+.float{position:absolute;z-index:2;display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:16px;background:rgba(12,26,64,.66);border:1px solid var(--edge);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 18px 40px -18px rgba(0,0,0,.7);font:500 14px Outfit,sans-serif;color:#e4edff;white-space:nowrap}
+.float b{display:block;font-size:15px}
+.float small{color:var(--mute);font-size:13px}
+.app{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;font:700 16px Outfit,sans-serif}
+.ps{background:#001e36;color:#31a8ff;border:1px solid #31a8ff55}
+.ai{background:#330000;color:#ff9a00;border:1px solid #ff9a0055}
+.ae{background:#00005b;color:#9999ff;border:1px solid #9999ff55}
+.pr{background:#2a0634;color:#ea77ff;border:1px solid #ea77ff55}
+.f1{top:16%;left:-6%}
+.f2{top:42%;right:-3%}
+.f3{bottom:20%;left:-2%}
+.apps{top:6%;right:4%;flex-direction:column;padding:10px;gap:8px}
+@keyframes bob{50%{transform:translateY(-8px)}}
+.float{animation:bob 6s ease-in-out infinite}.f2{animation-delay:-2s}.f3{animation-delay:-4s}.apps{animation-delay:-1s}
+
+/* wave + seções claras */
+.wave{display:block;width:100%;height:clamp(40px,6vw,90px)}
+.light{background:var(--paper);color:var(--paperInk)}
+.light .lead{color:var(--paperMute)}
+.light .hl{color:var(--blue2)}
+.about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:center}
+.seal{position:relative;aspect-ratio:1;max-width:420px;width:100%;margin:0 auto;border-radius:50%;background:radial-gradient(circle at 50% 45%,#fff 0,#e3ebfa 60%,#d5e1f7 100%);display:grid;place-items:center;box-shadow:0 30px 60px -30px rgba(11,26,61,.4)}
+.seal img{width:58%;height:auto}
+.seal::before{content:"";position:absolute;inset:-14px;border-radius:50%;border:1px dashed #9db6e6}
+.concept{display:flex;gap:16px;align-items:center;padding:16px 18px;border-radius:18px;background:#fff;border:1px solid #d6e1f5;margin:6px 0 8px}
+.concept img{width:56px;height:auto;flex:none}
+.concept p{margin:0;font-size:15px;color:var(--paperMute)}
+.concept b{color:var(--paperInk);font-weight:600}
+.aud{margin-top:clamp(48px,6vw,80px);padding-top:clamp(32px,4vw,48px);border-top:1px solid #d6e1f5;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(24px,6vw,96px);align-items:start}
+.aud h3{font-size:clamp(26px,3vw,34px);font-weight:700;letter-spacing:-.02em}
+.aud ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.aud li{display:flex;align-items:center;gap:12px;padding:14px 16px;border-radius:14px;background:#fff;border:1px solid #d6e1f5;font:500 16px Outfit,sans-serif;color:var(--paperInk)}
+.aud li svg{width:20px;height:20px;color:var(--blue2);flex:none}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}
+.facts div{border-top:2px solid var(--blue2);padding-top:12px}
+.facts b{display:block;font:600 20px/1.2 Outfit,sans-serif;margin-bottom:4px}
+.facts span{font-size:15px;color:var(--paperMute)}
+
+/* serviços */
+.sv{background:radial-gradient(50% 60% at 85% 20%,rgba(47,107,255,.22),transparent 70%),var(--night)}
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.head .lead{margin:0}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.svc{position:relative;display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:22px;background:linear-gradient(160deg,rgba(47,107,255,.14),rgba(10,24,56,.5));border:1px solid var(--edge);transition:border-color .2s,transform .2s}
+.svc:hover{border-color:rgba(79,212,255,.5);transform:translateY(-3px)}
+.svc .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:rgba(47,107,255,.18);border:1px solid rgba(79,212,255,.3);color:var(--cyan)}
+.svc .ic svg{width:26px;height:26px}
+.svc p{color:var(--mute);font-size:15px;margin:0;flex:1}
+.svc a{align-self:start;display:inline-flex;align-items:center;gap:8px;min-height:44px;font:600 15px Outfit,sans-serif;color:var(--cyan);text-decoration:none}
+.svc a:hover{text-decoration:underline}
+
+/* portfólio */
+.pf{background:var(--deep)}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{min-height:44px;padding:0 18px;border-radius:999px;border:1px solid var(--edge);background:none;color:#cfe0ff;font:500 15px Outfit,sans-serif;cursor:pointer}
+.filters button[aria-pressed=true]{background:#fff;color:var(--paperInk);border-color:#fff}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;scrollbar-width:thin;scrollbar-color:#2f6bff33 transparent}
+.work{flex:0 0 clamp(240px,24vw,290px);scroll-snap-align:start;border-radius:22px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid var(--edge)}
+.work[hidden]{display:none}
+.work .art{aspect-ratio:4/5;position:relative;background:linear-gradient(165deg,#1c4bc4,#0a1a48)}
+.work .art svg{position:absolute;inset:0;width:100%;height:100%}
+.work .meta{padding:16px 18px 20px}
+.work .tag{font-size:13px;color:var(--cyan);font-weight:600}
+.work h3{font-size:20px;margin:4px 0}
+.work p{font-size:14px;color:var(--mute);margin:0}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.bento .tile:first-child{grid-column:span 2;grid-row:span 2}
+.mason{columns:4 220px;column-gap:16px;margin-top:16px}
+.mason .tile{break-inside:avoid;margin-bottom:16px}
+.tile{position:relative;display:block;margin:0;border-radius:18px;overflow:hidden;background:#0c1a40;border:1px solid var(--edge);text-decoration:none;color:#fff}
+.tile img{width:100%;height:auto;display:block;transition:transform .5s ease}
+.bento .tile img{height:100%;object-fit:cover}
+.tile:hover img{transform:scale(1.04)}
+.tile .cap{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,rgba(3,8,24,.88));transform:translateY(8px);opacity:.92;transition:transform .3s,opacity .3s}
+.tile:hover .cap,.tile:focus-visible .cap{transform:none;opacity:1}
+.tile .cap small{display:block;font-size:13px;color:var(--cyan);font-weight:600}
+.tile .cap b{font:600 17px/1.2 Outfit,sans-serif}
+.bento .tile:first-child .cap b{font-size:24px}
+@media(hover:hover){.tile .cap{opacity:0}}
+.subh{font-size:24px;margin:40px 0 18px}
+.proj{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pj{position:relative;display:flex;flex-direction:column;padding:0;border:1px solid var(--edge);border-radius:20px;overflow:hidden;background:#0c1a40;color:#fff;text-align:left;cursor:pointer;font:inherit;transition:transform .25s,border-color .25s,box-shadow .25s}
+.pj:hover{transform:translateY(-4px);border-color:rgba(79,212,255,.55);box-shadow:0 24px 50px -24px rgba(0,0,0,.8)}
+.pj .cv{position:relative;aspect-ratio:4/5;overflow:hidden;background:#fff}
+.pj .cv img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transition:transform .6s ease}
+.pj .cv img.fit{object-fit:contain;padding:12%}
+.pj:hover .cv img{transform:scale(1.04)}
+.pj .cnt{position:absolute;top:12px;right:12px;display:flex;align-items:center;gap:6px;padding:6px 11px;border-radius:999px;background:rgba(5,12,34,.78);backdrop-filter:blur(6px);font:600 13px Outfit,sans-serif}
+.pj .cnt svg{width:15px;height:15px}
+.pj .mt{padding:16px 18px 18px;display:flex;justify-content:space-between;align-items:end;gap:12px}
+.pj .mt small{display:block;font-size:13px;color:var(--cyan);font-weight:600;margin-bottom:4px}
+.pj .mt b{font:600 19px/1.2 Outfit,sans-serif}
+.pj .go{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(47,107,255,.2);border:1px solid rgba(79,212,255,.35);color:var(--cyan);transition:background .2s}
+.pj:hover .go{background:var(--blue);color:#fff}
+.pj .go svg{width:18px;height:18px}
+.pj.big{grid-column:span 2;grid-row:span 2}
+.pj.big .cv{aspect-ratio:auto;flex:1;min-height:0}
+.pj.big .mt b{font-size:26px}
+.pv{position:fixed;inset:0;z-index:60;display:flex;flex-direction:column;background:rgba(3,7,20,.7);backdrop-filter:blur(6px)}
+.pv[hidden]{display:none}
+.pv-bar{display:flex;align-items:center;gap:14px;padding:12px max(3vw,14px);background:#050c22;border-bottom:1px solid var(--edge)}
+.pv-bar>img{width:30px;height:auto}
+.pv-h{flex:1;min-width:0}
+.pv-h h3{font-size:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pv-h p{margin:2px 0 0;font-size:13px;color:var(--mute)}
+.pv-x{flex:none;width:46px;height:46px;border-radius:50%;border:1px solid var(--edge);background:rgba(255,255,255,.06);color:#fff;font-size:26px;cursor:pointer}
+.pv-scroll{flex:1;overflow-y:auto;overscroll-behavior:contain}
+.pv-body{max-width:1100px;margin:0 auto;background:#fff;padding:0 0 clamp(24px,4vw,48px);display:flex;flex-direction:column;gap:clamp(24px,4vw,56px)}
+.pv-body img{display:block;width:100%;height:auto;background:#eef1f6}
+.blk{display:grid;gap:6px}
+.blk.single{padding:0}
+.blk.row{grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);align-items:start;gap:0}
+.blk.row.long{display:flex;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:thin}
+.blk.row.long img{flex:0 0 clamp(200px,24%,270px);width:auto;scroll-snap-align:start}
+.blk-hint{margin:-14px 0 0;padding:0 16px;font-size:13px;color:#5b6a8c;text-align:center}
+.blk.grid2,.blk.grid3,.blk.grid4{display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.blk.grid2 img{width:calc((100% - 6px)/2)}
+.blk.grid3 img{width:calc((100% - 12px)/3)}
+.blk.grid4 img{width:calc((100% - 18px)/4)}
+.pv-end{max-width:1100px;margin:0 auto;padding:40px 20px 70px;text-align:center;background:#050c22;color:#fff;font:600 clamp(20px,2.4vw,28px)/1.3 Outfit,sans-serif}
+.pv-end p{margin:0}
+@media(max-width:700px){.blk.row:not(.long){grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}.blk.row.long img{flex-basis:62vw}.blk.grid3 img,.blk.grid4 img{width:calc((100% - 4px)/2)}.blk.grid2,.blk.grid3,.blk.grid4{gap:4px}.blk.grid2 img{width:calc((100% - 4px)/2)}.pv-h h3{font-size:16px}.pv-body{gap:20px}.blk{gap:4px}}
+body.lock{overflow:hidden}
+.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.pcard{display:flex;flex-direction:column;border-radius:22px;overflow:hidden;background:rgba(255,255,255,.04);border:1px solid var(--edge);text-decoration:none;transition:transform .2s,border-color .2s}
+.pcard:hover{transform:translateY(-4px);border-color:rgba(79,212,255,.55)}
+.pcard img{width:100%;height:auto;aspect-ratio:400/313;object-fit:cover;flex:none}
+.pcard .meta{padding:16px 18px 20px}
+.pcard .tag{font-size:13px;color:var(--cyan);font-weight:600}
+.pcard h3{font-size:20px;margin:4px 0 0}
+.more{justify-content:space-between;padding:22px;background:linear-gradient(160deg,rgba(47,107,255,.25),rgba(10,24,56,.6))}
+.more h3{font-size:24px}
+.more ul{list-style:none;padding:0;margin:14px 0 18px;display:grid;gap:6px;font-size:14px;color:#c9d7f5}
+.more li::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--cyan);margin-right:8px;vertical-align:middle}
+.more .go{display:inline-flex;align-items:center;gap:8px;font:600 15px Outfit,sans-serif;color:#fff}
+.more .go svg{width:20px;height:20px;color:#1769ff;background:#fff;border-radius:6px;padding:2px}
+.railnav{display:flex;gap:8px;margin-top:18px;align-items:center}
+.railnav button{width:48px;height:48px;border-radius:50%;border:1px solid var(--edge);background:var(--glass);color:#fff;cursor:pointer;display:grid;place-items:center}
+.railnav button svg{width:18px;height:18px}
+.note{font-size:13px;color:var(--mute);margin:0 0 0 8px}
+
+/* processo */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px;position:relative;margin-top:44px}
+.steps::before{content:"";position:absolute;left:24px;right:24px;top:23px;border-top:2px dashed #a9bfe9}
+.step{position:relative}
+.step .dot{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#fff;border:2px solid #c9d8f3;color:var(--blue2);margin-bottom:18px;position:relative}
+.step .dot svg{width:20px;height:20px}
+.step:last-child .dot{background:var(--blue);border-color:var(--blue);color:#fff;box-shadow:0 0 0 8px rgba(47,107,255,.18)}
+.step b{display:block;font:600 20px/1.2 Outfit,sans-serif;margin-bottom:6px}
+.step span{font-size:15px;color:var(--paperMute)}
+
+/* contato */
+.ct{background:radial-gradient(60% 80% at 50% 100%,rgba(47,107,255,.35),transparent 70%),var(--night);text-align:center}
+.ct h2{font-size:clamp(38px,5.4vw,64px);max-width:16ch;margin:0 auto}
+.ct .lead{margin:20px auto 0}
+.ct .cta{justify-content:center}
+.ways{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:40px;padding:0;list-style:none}
+.ways li{display:flex;align-items:center;gap:10px;padding:10px 16px;border-radius:14px;border:1px solid var(--edge);background:var(--glass);font-size:15px}
+.ways svg{width:18px;height:18px;color:var(--cyan)}
+.ways a{text-decoration:none}
+.sample{font-size:13px;color:var(--mute);margin-top:14px}
+
+footer{border-top:1px solid var(--edge);padding:32px max(5vw,16px) 100px;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.fbe{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--edge);text-decoration:none;color:#fff;font:500 15px Outfit,sans-serif}
+.fbe:hover{background:rgba(255,255,255,.08)}
+footer img{height:28px;width:auto}
+
+/* sheet de orçamento */
+.sheet{position:fixed;inset:0;z-index:50;display:grid;align-items:end;justify-items:center}
+.sheet[hidden]{display:none}
+.sheet .bd{position:absolute;inset:0;background:rgba(2,6,20,.6);backdrop-filter:blur(4px)}
+.panel{position:relative;width:min(560px,100%);max-height:88vh;overflow:auto;background:#0c1a40;border:1px solid var(--edge);border-radius:28px 28px 0 0;padding:28px clamp(18px,4vw,32px) 32px;animation:up .28s ease-out}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+@media(min-width:700px){.sheet{align-items:center}.panel{border-radius:28px}}
+.panel h2{font-size:30px;margin:4px 0 6px}
+.panel .x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;border:1px solid var(--edge);background:none;color:#fff;font-size:24px;cursor:pointer}
+.opts{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
+.opts a{display:flex;align-items:center;gap:14px;min-height:58px;padding:10px 16px;border-radius:16px;border:1px solid var(--edge);background:var(--glass);text-decoration:none;font:500 16px Outfit,sans-serif}
+.opts a:hover{border-color:rgba(79,212,255,.55);background:rgba(47,107,255,.15)}
+.opts .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:rgba(47,107,255,.2);color:var(--cyan);flex:none}
+.opts .ic svg{width:20px;height:20px}
+.opts .ar{margin-left:auto;color:var(--mute)}
+
+/* barra fixa no celular */
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none;gap:8px;padding:8px;border-radius:999px;background:rgba(8,18,46,.85);backdrop-filter:blur(14px);border:1px solid var(--edge)}
+.mbar .btn{flex:1;min-height:48px}
+
+@media(prefers-reduced-motion:reduce){.float,.panel{animation:none}html{scroll-behavior:auto}}
+@media(max-width:1000px){.proj{grid-template-columns:repeat(2,minmax(0,1fr))}.bento{grid-template-columns:repeat(2,minmax(0,1fr))}.mason{columns:3}.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.steps{grid-template-columns:minmax(0,1fr);gap:22px}.steps::before{left:23px;right:auto;top:24px;bottom:24px;border-top:0;border-left:2px dashed #a9bfe9}.step{padding-left:70px;min-height:48px}.step .dot{position:absolute;left:0;top:0;margin:0}}
+@media(max-width:820px){.aud{grid-template-columns:minmax(0,1fr)}.menu{display:none}.hero .wrap,.about{grid-template-columns:minmax(0,1fr)}.htxt{padding-bottom:0}.photo{max-width:520px;margin:0 auto;width:100%}.f1{left:0}.f2{right:0}.f3{left:2%}.mbar{display:flex}.top .btn{display:none}}
+@media(max-width:600px){.proj{gap:12px}.pj .mt{padding:12px}.pj .mt b{font-size:15px}.pj .mt small{font-size:12px}.pj .go{display:none}.pj.big .mt b{font-size:19px}.lb-nav{display:none}.lb-top h3{font-size:18px}.bento .tile:first-child{grid-column:span 2;grid-row:auto}.mason{columns:2;column-gap:10px}.mason .tile{margin-bottom:10px}.bento{gap:10px}.tile .cap{padding:30px 10px 10px}.tile .cap b{font-size:14px}.tile .cap small{font-size:12px}.pgrid{grid-template-columns:minmax(0,1fr)}.aud ul{grid-template-columns:minmax(0,1fr)}.hero .wrap{display:flex;flex-direction:column;align-items:stretch;gap:0}.htxt{display:contents}.htxt .pill{order:1;align-self:start}.hero h1{order:2;margin-bottom:18px}.photo{order:3;margin:8px 0 22px}.photo .frame{border-radius:28px;-webkit-mask-image:none;mask-image:none}.hero .lead{order:4}.cta{order:5;margin-top:10px}.cta .btn{flex:1 1 100%}.chips{order:6;margin-bottom:56px}.seal{max-width:240px}.grid3,.facts{grid-template-columns:minmax(0,1fr)}.hero{padding-top:100px}.float{font-size:13px;padding:8px 10px}.f3{display:none}.apps{right:2%}.app{width:32px;height:32px;font-size:14px}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="arrL" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="wa" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 .8a5 5 0 0 1-2.8-2.8l.8-1-1-2z" fill="currentColor"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 6l8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="7" r="1.2" fill="currentColor"/></symbol>
+<symbol id="be" viewBox="0 0 24 24"><path d="M3 6h5.2c2 0 3.3 1 3.3 2.7 0 1.1-.6 1.9-1.6 2.3 1.4.3 2.1 1.3 2.1 2.6 0 2-1.5 3.4-3.8 3.4H3zm2.2 4.4h2.6c.9 0 1.5-.5 1.5-1.3S8.7 7.8 7.8 7.8H5.2zm0 4.8h2.9c1 0 1.7-.6 1.7-1.5s-.7-1.5-1.7-1.5H5.2zM15 7h5v1.3h-5zm2.6 2.5c2.3 0 3.6 1.6 3.4 4.2h-5.3c.1 1.2.8 1.9 1.9 1.9.8 0 1.4-.4 1.6-1h1.7c-.4 1.6-1.7 2.5-3.4 2.5-2.3 0-3.8-1.5-3.8-3.8s1.5-3.8 3.9-3.8zm1.6 3c-.1-1-.7-1.6-1.6-1.6s-1.5.6-1.7 1.6z" fill="currentColor"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></symbol>
+<symbol id="s-id" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 6.5v11M8 10h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="s-post" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="7" y="6" width="10" height="8" rx="1.5" fill="currentColor" opacity=".4"/><path d="M7 17h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+<symbol id="s-web" viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 18v3M2.5 8h19" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="s-vid" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 9l5 3-5 3z" fill="currentColor"/></symbol>
+<symbol id="s-print" viewBox="0 0 24 24"><path d="M3 5l6 2 6-2 6 2v13l-6-2-6 2-6-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 7v13M15 5v13" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="s-star" viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .6-4.5 4 1.3 6L12 16.2 6.6 19.2l1.3-6-4.5-4 6-.6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+<symbol id="s-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+<symbol id="s-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 12h6M9 16h6" stroke="currentColor" stroke-width="1.8"/></symbol>
+<symbol id="s-pen" viewBox="0 0 24 24"><path d="M12 3l5 7-5 11-5-11z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="11" r="1.6" fill="currentColor"/></symbol>
+<symbol id="s-edit" viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+<symbol id="s-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</defs></svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Thiago Bueno, Designer Católico"><img src="logo-h.png" alt="Thiago Bueno, Designer Católico" width="741" height="126"></a>
+    <nav class="menu" aria-label="Menu"><a href="#sobre">Sobre</a><a href="#servicos">Serviços</a><a href="#portfolio">Portfólio</a><a href="#processo">Processo</a><a href="#contato">Contato</a></nav>
+    <button class="btn pri sm" type="button" data-open>Orçamento</button>
+  </div>
+</header>
+
+<section class="hero band" id="inicio">
+  <div class="wrap">
+    <div class="htxt">
+      <span class="pill"><i></i>Agenda aberta para novos projetos</span>
+      <h1>Design que <em class="hl">evangeliza</em> com beleza e clareza.</h1>
+      <p class="lead">Sou Thiago Bueno, designer católico. Acredito no poder do design como instrumento de comunicação e evangelização. Por isso, desenvolvo soluções visuais criativas e profissionais para quem deseja transmitir a beleza da fé e a missão da Igreja.</p>
+      <div class="cta">
+        <button class="btn pri" type="button" data-open>Solicitar orçamento <svg><use href="#arr"/></svg></button>
+        <a class="btn sec" href="#portfolio">Ver portfólio</a>
+      </div>
+      <div class="chips"><span>Paróquias</span><span>Dioceses</span><span>Movimentos</span><span>Santuários</span><span>Eventos</span></div>
+    </div>
+    <div class="photo">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="frame"><img src="thiago.jpg" alt="Thiago Bueno em frente a um mural de artes que criou para paróquias" width="1080" height="1350" fetchpriority="high"></div>
+      <div class="float f1"><span class="app" style="background:rgba(47,107,255,.25);color:var(--cyan)"><svg width="20" height="20"><use href="#s-star"/></svg></span><span><b>Festas de padroeiro</b><small>Artes completas</small></span></div>
+      <div class="float f2"><span class="app" style="background:rgba(47,107,255,.25);color:var(--cyan)"><svg width="20" height="20"><use href="#s-id"/></svg></span><span><b>Identidade visual</b><small>Brasões e logos paroquiais</small></span></div>
+      <div class="float f3"><span class="app" style="background:rgba(47,107,255,.25);color:var(--cyan)"><svg width="20" height="20"><use href="#s-print"/></svg></span><span><b>Impressos e camisetas</b><small>Cartazes, folders, vestuário</small></span></div>
+      <div class="float apps" aria-label="Ferramentas: Photoshop, Illustrator, After Effects, Premiere Pro"><span class="app ps">Ps</span><span class="app ai">Ai</span><span class="app ae">Ae</span><span class="app pr">Pr</span></div>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="background:var(--night)"><path d="M0 60C240 10 480 0 720 30s480 60 720 10V90H0z" fill="#eef3fb"/></svg>
+<section class="light band" id="sobre" style="padding-top:clamp(28px,4vw,56px)">
+  <div class="wrap about">
+    <div class="seal"><img src="logo-cor.png" alt="Símbolo Thiago Bueno: cúpula com cruz unida a uma pena de caneta-tinteiro" width="620" height="637"></div>
+    <div>
+      <h2>Criatividade a serviço da <em class="hl">fé</em>.</h2>
+      <p class="lead" style="margin-top:22px">Thiago Bueno, Designer Católico, é uma marca pessoal de design gráfico e comunicação visual especializada no segmento católico. Nasce da união entre criatividade, fé e comunicação, para atender paróquias, dioceses, comunidades, movimentos e instituições ligadas à Igreja.</p>
+      <p class="lead">Mais do que produzir peças gráficas, o objetivo é uma comunicação profissional, criativa e coerente com a identidade e a missão evangelizadora da Igreja.</p>
+      <div class="concept"><img src="logo-cor.png" alt="" width="620" height="637"><p>O símbolo une a <b>ponta da ferramenta Pen</b>, do universo Adobe, à <b>cúpula da Basílica de São Pedro</b>, no Vaticano: a arte como instrumento de comunicação, e a criatividade colocada a serviço da fé.</p></div>
+      <div class="facts">
+        <div><b>Beleza</b><span>Peças cuidadas, que dignificam o que comunicam.</span></div>
+        <div><b>Fidelidade</b><span>Símbolos, cores e textos coerentes com a fé.</span></div>
+        <div><b>Clareza</b><span>A mensagem chega ao fiel sem ruído.</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap aud">
+    <div><h3>Para quem eu <em class="hl">trabalho</em></h3><p class="lead" style="margin-top:14px">Da comunidade do interior à arquidiocese, do congresso nacional à empresa que precisa de um design profissional.</p></div>
+    <ul id="aud"></ul>
+  </div>
+</section>
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="background:#eef3fb"><path d="M0 30C240 80 480 90 720 60s480-60 720-10V90H0z" fill="#050c22"/></svg>
+
+<section class="sv band" id="servicos" style="padding-top:clamp(28px,4vw,56px)">
+  <div class="wrap">
+    <div class="head">
+      <h2>Serviços para a sua <em class="hl">missão</em></h2>
+      <p class="lead">Escolha um serviço e a conversa já começa no WhatsApp.</p>
+    </div>
+    <div class="grid3" id="svcs"></div>
+  </div>
+</section>
+
+<section class="pf band" id="portfolio">
+  <div class="wrap">
+    <div class="head">
+      <div><h2>Projetos <em class="hl">recentes</em></h2><p class="lead" style="margin-top:14px">Festas, celebrações e identidades criadas para paróquias e comunidades. Clique em um projeto para ver todas as peças.</p></div>
+      <a class="btn be" href="https://www.behance.net/thiagobatista22" target="_blank" rel="noopener"><svg><use href="#be"/></svg>Ver no Behance</a>
+    </div>
+    <div class="proj" id="proj"></div>
+  </div>
+</section>
+<div class="pv" id="pv" role="dialog" aria-modal="true" aria-labelledby="pvT" hidden>
+  <div class="pv-bar">
+    <img src="logo-s.png" alt="" width="30" height="31">
+    <div class="pv-h"><h3 id="pvT"></h3><p id="pvG"></p></div>
+    <button class="pv-x" type="button" id="pvX" aria-label="Fechar projeto">×</button>
+  </div>
+  <div class="pv-scroll" id="pvScroll">
+    <div class="pv-body" id="pvBody"></div>
+    <div class="pv-end">
+      <p>Gostou deste projeto? Vamos criar o da sua comunidade.</p>
+      <div class="cta" style="justify-content:center;margin-top:18px">
+        <a class="btn pri" id="pvWa" href="#" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Pedir orçamento</a>
+        <button class="btn sec" type="button" id="pvNext">Próximo projeto <svg><use href="#arr"/></svg></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="background:#0a1838"><path d="M0 60C240 10 480 0 720 30s480 60 720 10V90H0z" fill="#eef3fb"/></svg>
+<section class="light band" id="processo" style="padding-top:clamp(28px,4vw,56px)">
+  <div class="wrap">
+    <h2>Do pedido à <em class="hl">entrega</em></h2>
+    <p class="lead" style="margin-top:16px">Um caminho simples, para você saber o que acontece em cada etapa.</p>
+    <div class="steps" id="steps"></div>
+  </div>
+</section>
+<svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true" style="background:#eef3fb"><path d="M0 30C240 80 480 90 720 60s480-60 720-10V90H0z" fill="#050c22"/></svg>
+
+<section class="ct band" id="contato" style="padding-top:clamp(28px,4vw,56px)">
+  <div class="wrap">
+    <h2>Tem um projeto para a sua <em class="hl">paróquia</em>?</h2>
+    <p class="lead">Conte o que a sua comunidade precisa. Respondo com uma proposta e um prazo.</p>
+    <div class="cta">
+      <button class="btn pri" type="button" data-open>Solicitar orçamento <svg><use href="#arr"/></svg></button>
+      <a class="btn sec" href="https://wa.me/5515997694812" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Chamar no WhatsApp</a>
+      <a class="btn be" href="https://www.behance.net/thiagobatista22" target="_blank" rel="noopener"><svg><use href="#be"/></svg>Ver portfólio completo no Behance</a>
+    </div>
+    <ul class="ways">
+      <li><svg><use href="#wa"/></svg><a href="https://wa.me/5515997694812" target="_blank" rel="noopener">(15) 99769-4812</a></li>
+      <li><svg><use href="#mail"/></svg><a href="mailto:thiagobuenodesign@gmail.com">thiagobuenodesign@gmail.com</a></li>
+      <li><svg><use href="#ig"/></svg><a href="https://www.instagram.com/buen_odesign/" target="_blank" rel="noopener">@buen_odesign</a></li>
+      <li><svg><use href="#pin"/></svg><span>Taquarivaí, SP · atendo todo o Brasil</span></li>
+    </ul>
+    
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="logo-h.png" alt="Thiago Bueno, Designer Católico" width="741" height="126">
+    <a class="fbe" href="https://www.behance.net/thiagobatista22" target="_blank" rel="noopener"><svg width="20" height="20"><use href="#be"/></svg>Behance</a>
+    <span>© 2026 Thiago Bueno · Bueno Design. Ad maiorem Dei gloriam.</span>
+  </div>
+</footer>
+
+<nav class="mbar" aria-label="Atalhos">
+  <a class="btn sec" href="#portfolio">Portfólio</a>
+  <button class="btn pri" type="button" data-open>Orçamento</button>
+</nav>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetT" hidden>
+  <div class="bd" data-close></div>
+  <div class="panel">
+    <button class="x" type="button" data-close aria-label="Fechar">×</button>
+    <h2 id="sheetT">Qual serviço você precisa?</h2>
+    <p class="lead" style="margin:0">Escolha uma opção e a mensagem já vai pronta para o meu WhatsApp.</p>
+    <ul class="opts" id="opts"></ul>
+  </div>
+</div>
+
+<script>
+{
+const WA='5515997694812';
+const wa=t=>'https://wa.me/'+WA+'?text='+encodeURIComponent('Olá, Thiago! '+t);
+
+const svcs=[
+ ['s-doc','Design gráfico e editorial','Revistas, livretos de celebração, folhetos, novenas e materiais de leitura bem diagramados.','Gostaria de um orçamento de design gráfico/editorial.'],
+ ['s-id','Identidade visual e branding','Logo, paleta e manual de marca para paróquias, comunidades, pastorais, movimentos e eventos.','Gostaria de um orçamento de identidade visual.'],
+ ['s-post','Peças para redes sociais','Posts, carrosséis e stories para cada tempo litúrgico, festa e campanha.','Gostaria de um orçamento de artes para redes sociais.'],
+ ['s-star','Comunicação visual para eventos','Festas de padroeiro, congressos, retiros, quermesses e shows de prêmios, da divulgação à sinalização.','Gostaria de um orçamento de comunicação para um evento.'],
+ ['s-print','Materiais gráficos e institucionais','Folders, banners, convites, ecobags, cartões e papelaria institucional.','Gostaria de um orçamento de material gráfico/institucional.'],
+ ['s-vid','Audiovisual e conteúdo digital','Vídeos, Reels, textos animados e sites para paróquias e comunidades.','Gostaria de um orçamento de vídeo ou conteúdo digital.']
+];
+const aud=['Paróquias e comunidades','Dioceses e arquidioceses','Congregações religiosas','Pastorais e movimentos','Santuários e instituições','Eventos e congressos','Iniciativas de evangelização','Empresas e marcas'];
+document.getElementById('aud').innerHTML=aud.map(t=>`<li><svg><use href="#s-check"/></svg>${t}</li>`).join('');
+document.getElementById('svcs').innerHTML=svcs.map(s=>`<article class="svc"><span class="ic"><svg><use href="#${s[0]}"/></svg></span><h3>${s[1]}</h3><p>${s[2]}</p><a href="${wa(s[3])}" target="_blank" rel="noopener">Pedir orçamento <svg width="16" height="16"><use href="#arr"/></svg></a></article>`).join('');
+document.getElementById('opts').innerHTML=svcs.concat([['s-chat','Outro projeto','','Gostaria de conversar sobre um projeto.']]).map(s=>`<li><a href="${wa(s[3])}" target="_blank" rel="noopener"><span class="ic"><svg><use href="#${s[0]}"/></svg></span>${s[1]}<svg class="ar" width="18" height="18"><use href="#arr"/></svg></a></li>`).join('');
+
+const PJ=[["sj26","Festa de São Joaquim 2026","Identidade de evento · Social media",10,[["single",[["00.jpg",1080,1350]]],["single",[["05.jpg",1080,1350]]],["row",[["07.jpg",1080,1350],["08.jpg",1080,1350],["09.jpg",1080,1350],["02.jpg",1080,1350]]],["single",[["06.jpg",1080,1350]]],["single",[["03.jpg",1120,1400]]],["single",[["01.jpg",990,1400]]],["single",[["04.jpg",1120,1400]]]]],["ordenacao","Ordenação Episcopal","Social media · Catedral de Vitória",8,[["single",[["00.jpg",1080,1350]]],["row",[["02.jpg",1080,1350],["03.jpg",1080,1350],["04.jpg",1080,1350],["05.jpg",1080,1350]]],["grid2",[["01.jpg",787,1400],["06.jpg",787,1400]]],["single",[["07.jpg",1080,1350]]]]],["aparecida","Novena e Festa de N. Sra. Aparecida","Campanha completa · Social media",28,[["single",[["00.jpg",1080,1350]]],["row",[["09.jpg",1080,1350],["10.jpg",1080,1350],["11.jpg",1080,1350],["12.jpg",1080,1350],["13.jpg",1080,1350],["14.jpg",1080,1350]]],["row",[["06.jpg",1080,1350],["07.jpg",1080,1350],["08.jpg",1080,1350]]],["grid3",[["26.jpg",1080,1350],["16.jpg",1080,1350],["17.jpg",1080,1350],["18.jpg",1080,1350],["19.jpg",1080,1350],["20.jpg",1080,1350],["21.jpg",1080,1350],["22.jpg",1080,1350],["23.jpg",1080,1350],["24.jpg",1080,1350],["25.jpg",1080,1350]]],["grid4",[["01.jpg",1080,1350],["02.jpg",1080,1350],["03.jpg",1080,1350],["04.jpg",1080,1350]]],["grid3",[["27.jpg",1080,1350],["05.jpg",1080,1350],["15.jpg",1080,1350]]]]],["santana","Festa de Sant'Ana 2026","Identidade de evento · Impressos",18,[["single",[["00.jpg",1080,1350]]],["single",[["16.jpg",1400,788]]],["row",[["01.jpg",1079,1350],["02.jpg",1081,1350],["03.jpg",1080,1350],["04.jpg",1080,1350],["05.jpg",1080,1350]]],["row",[["06.jpg",1080,1350],["07.jpg",1080,1350],["08.jpg",1080,1350],["09.jpg",1080,1350],["10.jpg",1080,1350],["11.jpg",1080,1350]]],["single",[["12.jpg",990,1400]]],["single",[["14.jpg",1400,990]]],["single",[["15.jpg",1400,990]]],["single",[["13.jpg",1080,1350]]],["single",[["17.jpg",1400,933]]]]],["jerico","Cerco de Jericó","Social media",14,[["single",[["00.jpg",1080,1350]]],["row",[["01.jpg",1080,1350],["02.jpg",1080,1350],["03.jpg",1080,1350],["04.jpg",1080,1350],["05.jpg",1080,1350],["06.jpg",1080,1350],["07.jpg",1080,1350],["08.jpg",1080,1350],["09.jpg",1080,1350],["10.jpg",1080,1350]]],["grid2",[["11.jpg",1080,1350],["12.jpg",1080,1350]]],["single",[["13.jpg",1120,1400]]]]],["brasao","Brasão da Paróquia Imaculada Conceição","Identidade visual · Branding",19,[["single",[["00.jpg",1400,1400]]],["single",[["02.jpg",1400,788]]],["single",[["04.jpg",1400,788]]],["single",[["06.jpg",1400,788]]],["single",[["08.jpg",1400,788]]],["single",[["10.jpg",1400,788]]],["single",[["11.jpg",1400,788]]],["single",[["12.jpg",1400,788]]],["single",[["13.jpg",1400,788]]],["single",[["14.jpg",1400,788]]],["single",[["15.jpg",1400,788]]],["single",[["19.jpg",1400,788]]],["grid2",[["01.jpg",1400,933],["03.jpg",1400,933],["05.jpg",1400,933],["07.jpg",1400,933]]],["single",[["09.jpg",1400,933]]],["grid2",[["20.jpg",1080,1080],["21.jpg",1400,933]]]]],["divino","Festa do Divino Espírito Santo","Social media",4,[["single",[["00.jpg",1080,1350]]],["grid3",[["03.jpg",1080,1350],["01.jpg",1080,1350],["02.jpg",1080,1350]]]]],["saojose","Tríduo de São José","Social media",10,[["single",[["06.jpg",1080,1350]]],["row",[["00.jpg",1080,1350],["07.jpg",1080,1350],["08.jpg",1080,1350],["09.jpg",1080,1350]]],["grid4",[["01.jpg",1080,1350],["02.jpg",1080,1350],["03.jpg",1080,1350],["04.jpg",1080,1350]]],["single",[["05.jpg",1080,1350]]]]],["arraia","Arraiá da Aparecida","Social media · Carrossel",10,[["single",[["00.jpg",787,1400]]],["row",[["02.jpg",1080,1350],["03.jpg",1080,1350],["04.jpg",1080,1350],["05.jpg",1080,1350],["06.jpg",1080,1350],["07.jpg",1080,1350]]],["grid3",[["01.jpg",1080,1350],["08.jpg",1080,1350],["09.jpg",1080,1350]]]]],["sj25","Festa de São Joaquim 2025","Identidade de evento · Impressos",8,[["single",[["00.jpg",1050,1400]]],["row",[["01.jpg",1080,1350],["02.jpg",1080,1350],["03.jpg",1080,1350],["08.jpg",1080,1350],["04.jpg",1080,1350]]],["single",[["06.jpg",1120,1400]]],["single",[["07.jpg",990,1400]]]]],["crisma","Camiseta da Crisma","Vestuário",2,[["grid2",[["00.jpg",1400,933],["01.jpg",1400,933]]]]],["leilao3","III Leilão de Gado","Social media",3,[["single",[["00.jpg",1080,1350]]],["grid2",[["02.jpg",1080,1350],["01.jpg",1080,1350]]]]],["leilao2","Quermesse e II Leilão de Gado","Social media",5,[["single",[["00.jpg",1080,1350]]],["single",[["04.jpg",1080,1350]]],["grid3",[["01.jpg",1080,1350],["02.jpg",1080,1350],["03.jpg",1080,1350]]]]],["sj24","Festa de São Joaquim 2024","Identidade de evento · Vestuário",9,[["single",[["00.jpg",990,1400]]],["grid3",[["04.jpg",1080,1350],["05.jpg",1080,1350],["06.jpg",1080,1350]]],["single",[["07.jpg",1080,1350]]],["single",[["08.jpg",990,1400]]],["single",[["01.jpg",1080,1350]]],["grid2",[["02.jpg",1080,1080],["03.jpg",1080,1080]]]]],["leilao1","I Leilão de Gado","Social media",1,[["single",[["00.jpg",1080,1350]]]]]];
+const projEl=document.getElementById('proj');
+projEl.innerHTML=PJ.map((p,i)=>`<button type="button" class="pj${i===0?' big':''}" data-i="${i}" aria-label="Abrir projeto: ${p[1]}, ${p[3]} peças"><span class="cv"><img src="pf2/${p[0]}/cover.jpg?v=4" alt="" loading="${i<6?'eager':'lazy'}"><span class="cnt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="3" width="14" height="14" rx="2"/><path d="M3 7v12a2 2 0 0 0 2 2h12"/></svg>${p[3]} ${p[3]>1?'peças':'peça'}</span></span><span class="mt"><span><small>${p[2]}</small><b>${p[1]}</b></span><span class="go"><svg><use href="#arr"/></svg></span></span></button>`).join('');
+const pv=document.getElementById('pv'),pvBody=document.getElementById('pvBody'),pvScroll=document.getElementById('pvScroll');
+let curI=-1,lastF=null;
+const openP=i=>{const p=PJ[i];curI=i;if(pv.hidden)lastF=document.activeElement;
+ document.getElementById('pvT').textContent=p[1];document.getElementById('pvG').textContent=`${p[2]} · ${p[3]} ${p[3]>1?'peças':'peça'}`;
+ let k=0;pvBody.innerHTML=p[4].map(([t,fs])=>`<div class="blk ${t}${t==='row'&&fs.length>6?' long':''}">${fs.map(f=>`<img src="pf2/${p[0]}/${f[0]}" width="${f[1]}" height="${f[2]}" alt="${p[1]}, peça ${++k}" loading="${k<3?'eager':'lazy'}">`).join('')}</div>${t==='row'&&fs.length>6?'<p class="blk-hint">Carrossel de '+fs.length+' lâminas · arraste para o lado</p>':''}`).join('');
+ document.getElementById('pvWa').href=wa('Vi o projeto "'+p[1]+'" no seu site e gostaria de um orçamento.');
+ pv.hidden=false;document.body.classList.add('lock');pvScroll.scrollTop=0;document.getElementById('pvX').focus()};
+const closeP=()=>{pv.hidden=true;document.body.classList.remove('lock');pvBody.innerHTML='';curI=-1;if(lastF)lastF.focus()};
+projEl.addEventListener('click',e=>{const b=e.target.closest('.pj');if(b)openP(+b.dataset.i)});
+document.getElementById('pvX').addEventListener('click',closeP);
+document.getElementById('pvNext').addEventListener('click',()=>openP((curI+1)%PJ.length));
+pv.addEventListener('click',e=>{if(e.target===pvScroll)closeP()});
+document.addEventListener('keydown',e=>{if(!pv.hidden&&e.key==='Escape')closeP()});
+
+const steps=[['s-chat','Conversa','Você conta a necessidade, o público e o prazo.'],['s-doc','Proposta','Envio escopo, valores e cronograma.'],['s-pen','Criação','Referências, oração e a primeira versão.'],['s-edit','Ajustes','Revisões até ficar do jeito certo.'],['s-check','Entrega','Arquivos finais organizados e prontos.']];
+document.getElementById('steps').innerHTML=steps.map(s=>`<div class="step"><span class="dot"><svg><use href="#${s[0]}"/></svg></span><b>${s[1]}</b><span>${s[2]}</span></div>`).join('');
+
+const sheet=document.getElementById('sheet');let last=null;
+const open=()=>{last=document.activeElement;sheet.hidden=false;sheet.querySelector('.x').focus()};
+const close=()=>{sheet.hidden=true;if(last)last.focus()};
+document.querySelectorAll('[data-open]').forEach(b=>b.addEventListener('click',open));
+sheet.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',close));
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!sheet.hidden)close()});
+}
+</script>
+</body>
+</html>
